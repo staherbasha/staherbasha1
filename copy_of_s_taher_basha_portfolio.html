@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S TAHER BASHA — Data Analyst Resume</title>
+  <meta name="description" content="Resume of S Taher Basha — Data Analyst" />
+  <style>
+    /*
+      Single-file, print-ready resume markup for easy use in Cursor/editor.
+      - Semantic sections for ATS parsing
+      - Responsive layout (mobile-first)
+      - Print styles included (A4/Letter friendly)
+    */
+
+    :root {
+      --bg: #0f1115;
+      --fg: #e6e9ef;
+      --muted: #a6adbb;
+      --accent: #7aa2f7;
+      --chip: #1b2130;
+      --rule: #2a3042;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #ffffff; --fg: #111827; --muted: #4b5563; --chip: #f3f4f6; --rule: #e5e7eb; --accent: #2563eb; }
+    }
+
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 400 15px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 32px auto;
+      padding: 0 20px 80px;
+    }
+
+    header {
+      display: grid;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .meta a { color: inherit; text-decoration: none; border-bottom: 1px dashed transparent; }
+    .meta a:hover { color: var(--fg); border-bottom-color: var(--muted); }
+
+    hr { border: 0; border-top: 1px solid var(--rule); margin: 18px 0; }
+
+    h2 {
+      margin: 22px 0 10px;
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px 24px;
+    }
+
+    /* Two-column on wide screens */
+    @media (min-width: 860px) {
+      .grid-2 { grid-template-columns: 1fr 1fr; }
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--chip), transparent 140%);
+      border: 1px solid var(--rule);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+
+    .list-tight { margin: 8px 0 0; padding-left: 18px; }
+    .list-tight li { margin: 4px 0; }
+
+    .tagline { color: var(--muted); margin-top: 2px; }
+
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      background: var(--chip);
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .role { font-weight: 600; }
+    .where { color: var(--muted); }
+    .when { color: var(--muted); font-size: 14px; }
+
+    .bullets { margin: 6px 0 0; padding-left: 18px; }
+    .bullets li { margin: 6px 0; }
+
+    .achievement { list-style: "★ "; }
+
+    .print-note {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      background: var(--chip);
+      color: var(--fg);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 13px;
+    }
+
+    @media print {
+      body { background: #fff; color: #000; }
+      .container { margin: 0; max-width: none; padding: 0; }
+      .card, .chip, .print-note { border: 0; background: transparent; }
+      .print-note { display: none; }
+      a { color: #000; text-decoration: none; }
+      hr { border-color: #000; }
+      /* Fit to one page when possible */
+      @page { margin: 20mm; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="document">
+    <header>
+      <div class="name">S TAHER BASHA</div>
+      <div class="meta" aria-label="Contact">
+        <span>Adoni, AP</span>
+        <a href="tel:+919492370672" aria-label="Phone">+91 94923 70672</a>
+        <a href="mailto:taher949237@gmail.com" aria-label="Email">taher949237@gmail.com</a>
+        <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+      </div>
+      <p class="tagline">Entry-level Data Analyst skilled in Power BI, SQL, Tableau, Python, and data storytelling.</p>
+    </header>
+
+    <hr />
+
+    <main>
+      <section aria-labelledby="obj">
+        <h2 id="obj">Objective</h2>
+        <p>
+          B.Tech in Electronics &amp; Communication Engineering graduate with hands-on experience in Power BI, Excel, and data analysis. Seeking an entry-level
+          <strong>Data Analyst</strong> role to apply analytical skills and contribute to data-driven decision-making.
+        </p>
+      </section>
+
+      <section class="grid grid-2" aria-labelledby="skills">
+        <div>
+          <h2 id="skills">Skills</h2>
+          <div class="card">
+            <ul class="list-tight">
+              <li><strong>Power BI</strong> — Created interactive dashboards and visual reports using slicers, KPIs, and custom visuals.</li>
+              <li><strong>SQL</strong> — Wrote optimized queries to extract, filter, and transform data from relational databases.</li>
+              <li><strong>Tableau</strong> — Built dynamic dashboards to visualize key business insights.</li>
+              <li><strong>Python</strong> — Performed data manipulation with Pandas &amp; NumPy; visualized trends using Matplotlib &amp; Seaborn.</li>
+              <li><strong>Data Cleaning</strong> — Removed errors, duplicates, and inconsistencies from raw datasets to prepare for analysis.</li>
+              <li><strong>Data Visualization</strong> — Developed charts and dashboards to identify trends, patterns, and anomalies.</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h2>Core Tools</h2>
+          <div class="card">
+            <div class="chip-row" aria-label="Tools">
+              <span class="chip">Power BI</span>
+              <span class="chip">Excel</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Tableau</span>
+              <span class="chip">Python</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Matplotlib</span>
+              <span class="chip">Seaborn</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid grid-2" aria-labelledby="edu">
+        <div>
+          <h2 id="edu">Education</h2>
+          <div class="card">
+            <div class="role">Bachelor of Technology in Electronics &amp; Communication Engineering</div>
+            <div class="where">St. John’s College of Engineering &amp; Technology, Adoni, AP</div>
+            <div class="when">2022 – 2026</div>
+          </div>
+          <div class="card">
+            <div class="role">Intermediate (MPC)</div>
+            <div class="where">Dr. Jyothimayi Junior College, Adoni, AP</div>
+            <div class="when">2020 – 2022</div>
+          </div>
+          <div class="card">
+            <div class="role">SSC</div>
+            <div class="where">Times English Medium High School, Adoni, AP</div>
+            <div class="when">2019 – 2020</div>
+          </div>
+        </div>
+        <div>
+          <h2>Certificates</h2>
+          <div class="card">
+            <ul class="list-tight">
+              <li>Data Analytics Professional Certificate — Coursera</li>
+              <li>Tableau Fundamentals — Udemy</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="projects">
+        <h2 id="projects">Projects</h2>
+        <article class="card" aria-label="Student Performance Analysis project">
+          <div class="role">Student Performance Analysis</div>
+          <div class="where">Final Year Project</div>
+          <div class="when">2025 – 2026</div>
+          <ul class="bullets">
+            <li>Built interactive dashboards using Power BI to track academic performance by department, semester, and subject.</li>
+            <li>Identified at-risk students, enabling targeted faculty interventions.</li>
+            <li>Improved average student GPA by <strong>15%</strong> through data-driven strategies.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="achievements">
+        <h2 id="achievements">Achievements</h2>
+        <div class="card">
+          <ul class="bullets achievement">
+            <li>Led a 4-member team on the Student Performance Analysis project using Power BI and Excel to analyze academic data and generate visual insights for faculty.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div class="print-note" aria-hidden="true">Tip: Use your browser’s <strong>Print</strong> (Ctrl/Cmd + P) to export as PDF.</div>
+  </div>
+</body>
+</html>
